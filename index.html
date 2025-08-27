@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Tracker Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container py-4">
+    <h1 class="text-center mb-4">Project Tracker Dashboard</h1>
+
+    <div class="text-center mb-3">
+      <button class="btn btn-primary" onclick="showForm()">+ Add Task</button>
+    </div>
+
+    <!-- Add/Edit Task Form -->
+    <div id="taskForm" class="card mb-4 form-box shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">Task Details</h5>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <input type="text" id="title" class="form-control" placeholder="Title" required>
+          </div>
+          <div class="col-md-6">
+            <input type="text" id="assigned_to" class="form-control" placeholder="Assigned To" required>
+          </div>
+          <div class="col-12">
+            <input type="text" id="description" class="form-control" placeholder="Description" required>
+          </div>
+          <div class="col-md-6">
+            <input type="date" id="deadline" class="form-control" required>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-success w-100">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Task Columns -->
+    <div class="row" id="taskBoard">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header bg-white text-dark fw-semibold border-bottom">To Do</div>
+          <div class="card-body task-container" id="To Do-tasks" ondrop="drop(event, 'To Do')" ondragover="allowDrop(event)"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header bg-white text-dark fw-semibold border-bottom">In Progress</div>
+          <div class="card-body task-container" id="In Progress-tasks" ondrop="drop(event, 'In Progress')" ondragover="allowDrop(event)"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header bg-white text-dark fw-semibold border-bottom">Done</div>
+          <div class="card-body task-container" id="Done-tasks" ondrop="drop(event, 'Done')" ondragover="allowDrop(event)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

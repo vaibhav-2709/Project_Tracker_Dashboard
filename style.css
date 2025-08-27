@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.task {
+  padding: 12px;
+  background-color: #e9f7fe;
+  border-left: 4px solid #0d6efd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: grab;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.task button {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.form-box {
+  display: none;
+}
+
+.edit-btn {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.edit-btn:hover {
+  background-color: #e67e22;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.task-container {
+  min-height: 150px;
+}
