@@ -1,15 +1,7 @@
-In modern computing environments, real-time monitoring of system
-performance is critical for stability, security, and operational efficiency. This
-project addresses the problem by integrating real-time system metric collection
-with machine-learning based risk prediction. The system monitors CPU, RAM,
-Disk, and Network usage, and classifies the system status as “High Risk” or
-“Low Risk” using a trained machine learning model. The project includes a
-web-based dashboard to visualize results and logs data into a MySQL database
-for analysis.
+Introduction
+In collaborative software development environments, maintaining clarity over task assignments, progress, and deadlines is essential. Tools like Jira and Trello provide robust solutions, but they often introduce complexities and overhead for smaller teams or custom workflows. This project replicates a simplified task-tracking environment through a full-stack web-based dashboard that allows users to add, view, edit, delete, and drag tasks between phases like “To Do”, “In Progress”, and “Done”. It is fully backed by a MySQL database and powered by PHP and JavaScript.
 Objective
-1.Collect and analyze live system metrics (CPU, RAM, Disk, Network).
-2.Train and evaluate multiple ML models: Neural Network, Random Forest,
-SVM, XGBoost.
-3.Integrate the best model into a Flask API.
-4.Log predictions into MySQL database.
-5.Display results on a responsive frontend.
+1.To create a lightweight and interactive task management system inspired by agile methodologies.
+2.To enable drag-and-drop task movement between status columns.
+3.To persist task data (including deadlines, assignment, and description) in a relational database.
+4.To ensure responsiveness and intuitive use via dynamic JavaScript and clean styling.
